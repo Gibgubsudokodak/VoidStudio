@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: white;
+    padding: 16px 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.car-icon {
+    width: 24px;
+    height: 24px;
+    fill: #4a90e2;
+}
+
+.header-title {
+    color: #4a90e2;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: auto;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #f0f0f0;
+}
+
+.back-arrow {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.vehicle-header {
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: white;
+    padding: 32px;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+}
+
+.vehicle-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.service-header {
+    padding: 24px 32px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.service-serial {
+    color: #666;
+    font-size: 14px;
+}
+
+.service-item {
+    padding: 24px 32px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: background-color 0.2s;
+}
+
+.service-item:hover {
+    background-color: #f9fafb;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-info {
+    flex: 1;
+}
+
+.service-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.service-details {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.service-parts {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #4a90e2;
+    font-size: 14px;
+}
+
+.service-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.calendar-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.parts-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.footer {
+    text-align: center;
+    padding: 24px;
+    color: #999;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+.user-avatar {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 16px;
+    }
+
+    .vehicle-title {
+        font-size: 32px;
+    }
+
+    .service-item {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+}

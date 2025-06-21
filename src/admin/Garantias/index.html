@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Garantías - Servicios de AutoGarantía</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>
+                    <span class="icon">AG</span>
+                    Servicios de AutoGarantía
+                </h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="../index.html">Panel Principal</a></li>
+                <li><a href="../Clientes/index.html">Clientes</a></li>
+                <li><a href="../Vehiculos/index.html">Vehículos</a></li>
+                <li><a href="index.html" class="active">Garantías</a></li>
+                <li><a href="../Servicios/index.html">Catálogo de Servicios</a></li>
+                <li><a href="../insumos/index.html">Catálogo de Insumos</a></li>
+                <li><a href="../Reportes/index.html">Reportes</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="header-title">
+                    <h1>Servicios de AutoGarantía</h1>
+                </div>
+                <div class="profile">A</div>
+            </div>
+
+            <div class="content">
+                <h1>Control de Garantías</h1>
+                <p style="margin-bottom: 24px; color: #7f8c8d;">Supervisar los períodos y estados de las garantías de los vehículos.</p>
+                <div class="search-actions">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar por Nº Serie o Propietario...">
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Modelo Vehículo</th>
+                                <th>Número de Serie</th>
+                                <th>Propietario</th>
+                                <th>Fecha de Compra</th>
+                                <th>Fin de Garantía</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sedan X Pro</td>
+                                <td>SKX123ABC456</td>
+                                <td>John Doe</td>
+                                <td>15/08/2022</td>
+                                <td>15/09/2024</td>
+                                <td class="status-expiring">Por expirar</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>SUV Y Adventure</td>
+                                <td>SKY789DEF012</td>
+                                <td>John Doe</td>
+                                <td>20/01/2023</td>
+                                <td>20/01/2026</td>
+                                <td class="status-active">Activa</td>
+                               
+                            </tr>
+                            <tr>
+                                <td>Hatchback Z City</td>
+                                <td>SKZ456GHI345</td>
+                                <td>Jane Smith</td>
+                                <td>01/11/2023</td>
+                                <td>01/11/2024</td>
+                                <td class="status-expiring">Por expirar</td>
+                               
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

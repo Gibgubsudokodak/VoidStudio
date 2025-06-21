@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes - Servicios de AutoGarantía</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>
+                    <span class="icon">AG</span>
+                    Servicios de AutoGarantía
+                </h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="../index.html">Panel Principal</a></li>
+                <li><a href="../Clientes/index.html" class="active">Clientes</a></li>
+                <li><a href="../Vehiculos/index.html">Vehículos</a></li>
+                <li><a href="../Garantias/index.html">Garantías</a></li>
+                <li><a href="../Servicios/Index.html">Catálogo de Servicios</a></li>
+                <li><a href="../insumos/index.html">Catálogo de Insumos</a></li>
+                <li><a href="../Reportes/index.html">Reportes</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="header-title">
+                    <h1>Servicios de AutoGarantía</h1>
+                </div>
+                <div class="profile">A</div>
+            </div>
+
+            <div class="content">
+                <h1>Gestión de Clientes</h1>
+                <p style="margin-bottom: 24px; color: #7f8c8d;">Desde aca puedes ver los datos de los clientes.</p>
+                <div class="search-actions">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar clientes (DNI o nombre)...">
+                    </div>
+                    <div class="actions"></div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>DNI</th>
+                                <th>Contacto</th>
+                                <th>Dirección</th>
+                                <th>Vehículos</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>12345678A</td>
+                                <td>john.doe@example.com</td>
+                                <td>123 Main St, Anytown</td>
+                                <td>2</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <div class="action-icon delete-icon">🗑️</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jane Smith</td>
+                                <td>87654321B</td>
+                                <td>jane.smith@example.com</td>
+                                <td>456 Oak Ave, Anytown</td>
+                                <td>1</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <div class="action-icon delete-icon">🗑️</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Robert Johnson</td>
+                                <td>45678912C</td>
+                                <td>robert.j@example.com</td>
+                                <td>789 Pine Rd, Anytown</td>
+                                <td>3</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <div class="action-icon delete-icon">🗑️</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
