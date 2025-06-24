@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<?php
+    require_once 'process.php';
+?>
     <div class="container">
         <!-- Sidebar -->
         <div class="sidebar">
@@ -28,12 +31,39 @@
         </div>
 
         <!-- Main Content -->
-        <div class="main-content">
+                  <div class="main-content">
             <div class="header">
                 <div class="header-title">
                     <h1>Servicios de AutoGarantía</h1>
                 </div>
-                <div class="profile">A</div>
+                <div class="profile-container" tabindex="0">
+                    <div class="profile">A</div>
+                    <div class="profile-dropdown">
+                        <div class="dropdown-header">
+                            <div class="user-name">Admin User</div>
+                            <div class="user-role">Administrador</div>
+                        </div>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">
+                                <div class="item-icon dashboard-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                                    </svg>
+                                </div>
+                                Panel de Administrador
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <div class="item-icon logout-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.59L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/>
+                                    </svg>
+                                </div>
+                                Cerrar Sesión
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="content">
@@ -48,6 +78,7 @@
                         <label for="modal-toggle" class="btn btn-primary">Nuevo Vehículo</label>
                     </div>
                 </div>
+            
 
                 <div class="table-container">
                     <table>
@@ -117,7 +148,7 @@
   <div class="modal-content">
     <label for="modal-toggle" class="close-modal">&times;</label>
     <h2>Agregar / Editar Vehículo</h2>
-    <form id="vehicleForm">
+    <form id="vehicleForm" action="" method="POST">
       <div class="form-group">
         <label for="marcaModelo">Vehículo (Marca y Modelo)</label>
         <input type="text" id="marcaModelo" name="marcaModelo" required>
@@ -176,7 +207,6 @@
       <div class="form-actions">
         <label for="modal-toggle" class="btn btn-secondary">Cancelar</label>
         <button type="submit" class="btn btn-primary">Guardar</button>
-      </div>
       </div>
     </form>
   </div>
