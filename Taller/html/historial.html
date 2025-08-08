@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial - AutoGarantía</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-content">
+    <div class="content-header">
+      <h1>Historial de Servicios</h1>
+      <p class="subtitle">Registro completo de servicios realizados</p>
+    </div>
+
+    <div class="search-actions">
+      <div class="search-bar">
+        <span class="material-icons">search</span>
+        <input type="text" placeholder="Buscar servicios...">
+      </div>
+      <div class="actions">
+        <div class="form-group">
+          <select class="form-control">
+            <option value="all">Todos los estados</option>
+            <option value="pending">Pendientes</option>
+            <option value="in-progress">En progreso</option>
+            <option value="completed">Completados</option>
+            <option value="cancelled">Cancelados</option>
+          </select>
+        </div>
+        <button class="btn btn-secondary">
+          <span class="material-icons">download</span>
+          Exportar
+        </button>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID Servicio</th>
+            <th>Fecha</th>
+            <th>Cliente</th>
+            <th>Vehículo</th>
+            <th>Tipo</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#SRV-2023-001</td>
+            <td>15/10/2023</td>
+            <td>Juan Pérez</td>
+            <td>Nissan Sentra 2020</td>
+            <td>Mantenimiento</td>
+            <td><span class="status-badge completed">Completado</span></td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon view-icon" title="Ver detalles">
+                  <span class="material-icons">visibility</span>
+                </button>
+                <button class="action-icon print-icon" title="Imprimir">
+                  <span class="material-icons">print</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>#SRV-2023-002</td>
+            <td>18/10/2023</td>
+            <td>María García</td>
+            <td>Volkswagen Jetta 2018</td>
+            <td>Reparación</td>
+            <td><span class="status-badge in-progress">En progreso</span></td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon view-icon" title="Ver detalles">
+                  <span class="material-icons">visibility</span>
+                </button>
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>#SRV-2023-003</td>
+            <td>20/10/2023</td>
+            <td>Carlos López</td>
+            <td>Toyota Corolla 2021</td>
+            <td>Diagnóstico</td>
+            <td><span class="status-badge pending">Pendiente</span></td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon view-icon" title="Ver detalles">
+                  <span class="material-icons">visibility</span>
+                </button>
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon delete-icon" title="Cancelar">
+                  <span class="material-icons">cancel</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="pagination">
+      <button class="btn btn-secondary" disabled>
+        <span class="material-icons">chevron_left</span>
+      </button>
+      <span class="page-info">Página 1 de 5</span>
+      <button class="btn btn-secondary">
+        <span class="material-icons">chevron_right</span>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

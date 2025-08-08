@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Servicio - AutoGarantía</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/agendarce.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="page-header">
+            <h1 class="page-title">Agendar Servicio</h1>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Nueva Cita</h2>
+            </div>
+
+            <form class="appointment-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="appointmentVehicle" class="form-label">Vehículo</label>
+                        <select id="appointmentVehicle" class="form-control" required>
+                            <option value="">Seleccione un vehículo</option>
+                            <option value="1">Toyota Corolla 2021</option>
+                            <option value="2">Honda Civic 2018</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointmentService" class="form-label">Tipo de Servicio</label>
+                        <select id="appointmentService" class="form-control" required>
+                            <option value="">Seleccione un servicio</option>
+                            <option value="oil">Cambio de aceite</option>
+                            <option value="tire">Rotación de llantas</option>
+                            <option value="brakes">Revisión de frenos</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="appointmentDate" class="form-label">Fecha</label>
+                        <input type="date" id="appointmentDate" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointmentTime" class="form-label">Hora</label>
+                        <select id="appointmentTime" class="form-control" required>
+                            <option value="">Seleccione una hora</option>
+                            <option value="08:00">08:00 AM</option>
+                            <option value="09:00">09:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointmentLocation" class="form-label">Taller</label>
+                    <select id="appointmentLocation" class="form-control" required>
+                        <option value="">Seleccione un taller</option>
+                        <option value="central">Taller Central</option>
+                        <option value="north">Taller Norte</option>
+                        <option value="south">Taller Sur</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointmentNotes" class="form-label">Notas adicionales</label>
+                    <textarea id="appointmentNotes" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-outline">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="material-icons">schedule</span> Confirmar Cita
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Citas Programadas</h2>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Vehículo</th>
+                            <th>Servicio</th>
+                            <th>Taller</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>25/05/2023 - 10:00 AM</td>
+                            <td>Toyota Corolla 2021</td>
+                            <td>Cambio de aceite</td>
+                            <td>Taller Central</td>
+                            <td><span class="badge badge-primary">Confirmada</span></td>
+                            <td>
+                                <button class="btn btn-outline btn-sm">
+                                    <span class="material-icons">edit</span>
+                                </button>
+                                <button class="btn btn-outline btn-sm">
+                                    <span class="material-icons">cancel</span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

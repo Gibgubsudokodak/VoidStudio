@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios - AutoGarantía</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="main-content">
+    <div class="content-header">
+      <h1>Servicios</h1>
+      <p class="subtitle">Gestión de servicios realizados</p>
+    </div>
+
+    <div class="search-actions">
+      <div class="search-bar">
+        <span class="material-icons">search</span>
+        <input type="text" placeholder="Buscar servicios..." />
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary">
+          <span class="material-icons">add</span>
+          Nuevo Servicio
+        </button>
+        <button class="btn btn-secondary">
+          <span class="material-icons">download</span>
+          Exportar
+        </button>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID Servicio</th>
+            <th>Descripción</th>
+            <th>Vehículo</th>
+            <th>Fecha</th>
+            <th>Cliente</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>S-001</td>
+            <td>Cambio de aceite</td>
+            <td>Honda CBR 500</td>
+            <td>2024-01-15</td>
+            <td>Juan Pérez</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon delete-icon" title="Eliminar">
+                  <span class="material-icons">delete</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>S-002</td>
+            <td>Revisión general</td>
+            <td>Yamaha MT-03</td>
+            <td>2024-02-10</td>
+            <td>María García</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon delete-icon" title="Eliminar">
+                  <span class="material-icons">delete</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
+

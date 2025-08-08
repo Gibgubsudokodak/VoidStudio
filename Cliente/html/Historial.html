@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial - AutoGarantía</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/historial.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="page-header">
+            <h1 class="page-title">Historial de Servicios</h1>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Todos los Servicios</h2>
+                <div class="filter-group">
+                    <select class="form-control">
+                        <option>Todos los vehículos</option>
+                        <option>Toyota Corolla 2021</option>
+                        <option>Honda Civic 2018</option>
+                    </select>
+                    <input type="date" class="form-control" placeholder="Desde">
+                    <input type="date" class="form-control" placeholder="Hasta">
+                    <button class="btn btn-primary">Filtrar</button>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Vehículo</th>
+                            <th>Servicio</th>
+                            <th>Taller</th>
+                            <th>Costo</th>
+                            <th>Garantía</th>
+                            <th>Detalles</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15/03/2023</td>
+                            <td>Toyota Corolla 2021</td>
+                            <td>Cambio de aceite</td>
+                            <td>Taller Central</td>
+                            <td>$0.00</td>
+                            <td><span class="badge badge-success">Cubierto</span></td>
+                            <td>
+                                <button class="btn btn-outline btn-sm">
+                                    <span class="material-icons">visibility</span> Ver
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>22/01/2023</td>
+                            <td>Honda Civic 2018</td>
+                            <td>Rotación de llantas</td>
+                            <td>Taller Norte</td>
+                            <td>$120.00</td>
+                            <td><span class="badge badge-warning">Parcial</span></td>
+                            <td>
+                                <button class="btn btn-outline btn-sm">
+                                    <span class="material-icons">visibility</span> Ver
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10/12/2022</td>
+                            <td>Toyota Corolla 2021</td>
+                            <td>Revisión general</td>
+                            <td>Taller Central</td>
+                            <td>$0.00</td>
+                            <td><span class="badge badge-success">Cubierto</span></td>
+                            <td>
+                                <button class="btn btn-outline btn-sm">
+                                    <span class="material-icons">visibility</span> Ver
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

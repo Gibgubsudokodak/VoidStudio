@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insumos - AutoGarantía</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-content">
+    <div class="content-header">
+      <h1>Insumos</h1>
+      <p class="subtitle">Inventario de repuestos y materiales</p>
+    </div>
+
+    <div class="search-actions">
+      <div class="search-bar">
+        <span class="material-icons">search</span>
+        <input type="text" placeholder="Buscar insumos...">
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary">
+          <span class="material-icons">add</span>
+          Nuevo Insumo
+        </button>
+        <button class="btn btn-secondary">
+          <span class="material-icons">download</span>
+          Exportar
+        </button>
+        <button class="btn btn-secondary">
+          <span class="material-icons">inventory</span>
+          Inventario
+        </button>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Descripción</th>
+            <th>Categoría</th>
+            <th>Marca</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>INS-001</td>
+            <td>Aceite sintético 5W-30</td>
+            <td>Lubricantes</td>
+            <td>Mobil</td>
+            <td>$350.00</td>
+            <td>25</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon inventory-icon" title="Ajustar inventario">
+                  <span class="material-icons">inventory</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>INS-002</td>
+            <td>Filtro de aire</td>
+            <td>Filtros</td>
+            <td>Fram</td>
+            <td>$450.00</td>
+            <td>12</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon inventory-icon" title="Ajustar inventario">
+                  <span class="material-icons">inventory</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>INS-003</td>
+            <td>Pastillas de freno delanteras</td>
+            <td>Frenos</td>
+            <td>Brembo</td>
+            <td>$1,200.00</td>
+            <td>8</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon inventory-icon" title="Ajustar inventario">
+                  <span class="material-icons">inventory</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>INS-004</td>
+            <td>Batería 12V 60Ah</td>
+            <td>Eléctrico</td>
+            <td>ACDelco</td>
+            <td>$2,800.00</td>
+            <td>5</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon inventory-icon" title="Ajustar inventario">
+                  <span class="material-icons">inventory</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="pagination">
+      <button class="btn btn-secondary" disabled>
+        <span class="material-icons">chevron_left</span>
+      </button>
+      <span class="page-info">Página 1 de 2</span>
+      <button class="btn btn-secondary">
+        <span class="material-icons">chevron_right</span>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

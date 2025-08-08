@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Servicio - AutoGarantía</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-content">
+    <div class="content-header">
+      <h1>Registrar Servicio</h1>
+      <p class="subtitle">Nueva orden de servicio para vehículo</p>
+    </div>
+
+    <div class="service-form-container">
+      <form class="service-form">
+        <div class="form-section">
+          <h2 class="section-title">Datos del Vehículo</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="client-select">Cliente</label>
+              <select id="client-select" class="form-control" required>
+                <option value="">Seleccionar cliente...</option>
+                <option value="1">Juan Pérez</option>
+                <option value="2">María García</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="vehicle-select">Vehículo</label>
+              <select id="vehicle-select" class="form-control" required disabled>
+                <option value="">Seleccione un cliente primero</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="mileage">Kilometraje</label>
+              <input type="number" id="mileage" class="form-control" placeholder="Ej. 45000" required>
+            </div>
+            <div class="form-group">
+              <label for="fuel-level">Nivel de combustible</label>
+              <select id="fuel-level" class="form-control" required>
+                <option value="">Seleccionar...</option>
+                <option value="empty">Vacío</option>
+                <option value="quarter">1/4</option>
+                <option value="half">1/2</option>
+                <option value="three-quarters">3/4</option>
+                <option value="full">Lleno</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2 class="section-title">Detalles del Servicio</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service-type">Tipo de Servicio</label>
+              <select id="service-type" class="form-control" required>
+                <option value="">Seleccionar tipo...</option>
+                <option value="maintenance">Mantenimiento</option>
+                <option value="repair">Reparación</option>
+                <option value="diagnostic">Diagnóstico</option>
+                <option value="warranty">Garantía</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="priority">Prioridad</label>
+              <select id="priority" class="form-control" required>
+                <option value="normal">Normal</option>
+                <option value="high">Alta</option>
+                <option value="urgent">Urgente</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="service-description">Descripción del Problema/Servicio</label>
+            <textarea id="service-description" class="form-control" rows="4" placeholder="Describa el problema o servicio requerido..." required></textarea>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2 class="section-title">Insumos Requeridos</h2>
+          <div class="supplies-list">
+            <div class="supply-item">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="supply-1">Insumo</label>
+                  <select id="supply-1" class="form-control supply-select">
+                    <option value="">Seleccionar insumo...</option>
+                    <option value="1">Aceite sintético 5W-30</option>
+                    <option value="2">Filtro de aire</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="quantity-1">Cantidad</label>
+                  <input type="number" id="quantity-1" class="form-control" min="1" value="1">
+                </div>
+                <button type="button" class="btn btn-danger remove-supply">
+                  <span class="material-icons">delete</span>
+                </button>
+              </div>
+            </div>
+            <button type="button" class="btn btn-secondary add-supply">
+              <span class="material-icons">add</span>
+              Agregar Insumo
+            </button>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary">
+            <span class="material-icons">cancel</span>
+            Cancelar
+          </button>
+          <button type="submit" class="btn btn-primary">
+            <span class="material-icons">save</span>
+            Guardar Servicio
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

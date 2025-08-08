@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clientes - AutoGarantía</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-content">
+    <div class="content-header">
+      <h1>Clientes</h1>
+      <p class="subtitle">Gestión de clientes registrados</p>
+    </div>
+
+    <div class="search-actions">
+      <div class="search-bar">
+        <span class="material-icons">search</span>
+        <input type="text" placeholder="Buscar clientes...">
+      </div>
+      <div class="actions">
+        <button class="btn btn-secondary">
+          <span class="material-icons">download</span>
+          Exportar
+        </button>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+            <th>Vehículos</th>
+            <th>Último Servicio</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Juan Pérez</td>
+            <td>+52 55 1234 5678</td>
+            <td>juan@example.com</td>
+            <td>2</td>
+            <td>15/10/2023</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon vehicles-icon" title="Vehículos">
+                  <span class="material-icons">directions_car</span>
+                </button>
+                <button class="action-icon history-icon" title="Historial">
+                  <span class="material-icons">history</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>María García</td>
+            <td>+52 55 8765 4321</td>
+            <td>maria@example.com</td>
+            <td>1</td>
+            <td>18/10/2023</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon vehicles-icon" title="Vehículos">
+                  <span class="material-icons">directions_car</span>
+                </button>
+                <button class="action-icon history-icon" title="Historial">
+                  <span class="material-icons">history</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Carlos López</td>
+            <td>+52 55 5555 5555</td>
+            <td>carlos@example.com</td>
+            <td>1</td>
+            <td>20/10/2023</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon vehicles-icon" title="Vehículos">
+                  <span class="material-icons">directions_car</span>
+                </button>
+                <button class="action-icon history-icon" title="Historial">
+                  <span class="material-icons">history</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

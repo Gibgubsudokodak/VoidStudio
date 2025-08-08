@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehículos - AutoGarantía</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-content">
+    <div class="content-header">
+      <h1>Vehículos</h1>
+      <p class="subtitle">Registro de vehículos de clientes</p>
+    </div>
+
+    <div class="search-actions">
+      <div class="search-bar">
+        <span class="material-icons">search</span>
+        <input type="text" placeholder="Buscar vehículos...">
+      </div>
+      <div class="actions">
+        <button class="btn btn-secondary">
+          <span class="material-icons">download</span>
+          Exportar
+        </button>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Placas</th>
+            <th>Marca/Modelo</th>
+            <th>Año</th>
+            <th>VIN</th>
+            <th>Cliente</th>
+            <th>Último Servicio</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ABC-1234</td>
+            <td>Nissan Sentra</td>
+            <td>2020</td>
+            <td>1N4BL4BV0LC123456</td>
+            <td>Juan Pérez</td>
+            <td>15/10/2023</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon history-icon" title="Historial">
+                  <span class="material-icons">history</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>DEF-5678</td>
+            <td>Volkswagen Jetta</td>
+            <td>2018</td>
+            <td>3VW467AU9JM123456</td>
+            <td>María García</td>
+            <td>18/10/2023</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon history-icon" title="Historial">
+                  <span class="material-icons">history</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>GHI-9012</td>
+            <td>Toyota Corolla</td>
+            <td>2021</td>
+            <td>5YFEPMAE0MP123456</td>
+            <td>Carlos López</td>
+            <td>20/10/2023</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon history-icon" title="Historial">
+                  <span class="material-icons">history</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="pagination">
+      <button class="btn btn-secondary" disabled>
+        <span class="material-icons">chevron_left</span>
+      </button>
+      <span class="page-info">Página 1 de 3</span>
+      <button class="btn btn-secondary">
+        <span class="material-icons">chevron_right</span>
+      </button>
+    </div>
+  </div></body>
+</html>

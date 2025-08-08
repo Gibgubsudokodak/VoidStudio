@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garantías - AutoGarantía</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="main-content">
+    <div class="content-header">
+      <h1>Garantías</h1>
+      <p class="subtitle">Gestión de garantías activas</p>
+    </div>
+
+    <div class="search-actions">
+      <div class="search-bar">
+        <span class="material-icons">search</span>
+        <input type="text" placeholder="Buscar garantías..." />
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary">
+          <span class="material-icons">add</span>
+          Nueva Garantía
+        </button>
+        <button class="btn btn-secondary">
+          <span class="material-icons">download</span>
+          Exportar
+        </button>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>ID Garantía</th>
+            <th>Vehículo</th>
+            <th>Cliente</th>
+            <th>Fecha Inicio</th>
+            <th>Fecha Fin</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>G-001</td>
+            <td>Honda CBR 500</td>
+            <td>Juan Pérez</td>
+            <td>2023-01-01</td>
+            <td>2024-01-01</td>
+            <td>Activa</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon delete-icon" title="Eliminar">
+                  <span class="material-icons">delete</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>G-002</td>
+            <td>Yamaha MT-03</td>
+            <td>María García</td>
+            <td>2023-06-15</td>
+            <td>2024-06-15</td>
+            <td>Activa</td>
+            <td>
+              <div class="action-icons">
+                <button class="action-icon edit-icon" title="Editar">
+                  <span class="material-icons">edit</span>
+                </button>
+                <button class="action-icon delete-icon" title="Eliminar">
+                  <span class="material-icons">delete</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
+
