@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Servicios de AutoGarantía</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>
+                    <span class="icon">AG</span>
+                    AutoGarantía
+                </h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="index.html" class="active"><span class="material-icons">dashboard</span>Panel Principal</a></li>
+                <li><a href="Clientes/index.html"><span class="material-icons">people</span>Clientes</a></li>
+                <li><a href="Vehiculos/index.html"><span class="material-icons">directions_car</span>Vehículos</a></li>
+                <li><a href="Garantias/index.html"><span class="material-icons">verified</span>Garantías</a></li>
+                <li><a href="Servicios/Index.html"><span class="material-icons">handyman</span>Catálogo de Servicios</a></li>
+                <li><a href="insumos/index.html"><span class="material-icons">inventory</span>Catálogo de Insumos</a></li>
+                <li><a href="Reportes/index.html"><span class="material-icons">assessment</span>Reportes</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+    <div class="header">
+        <div class="header-title">
+            <div class="car-icon">
+                <span class="material-icons">directions_car</span>
+            </div>
+            <h1>Servicios de AutoGarantía</h1>
+        </div>
+        
+        <div class="profile-container" tabindex="0">
+            <div class="profile">A</div>
+            <div class="profile-dropdown">
+                <div class="dropdown-header">
+                    <div class="user-name">Admin User</div>
+                    <div class="user-role">Administrador</div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <a href="/index.html" class="dropdown-item">
+                    <span class="material-icons">logout</span>
+                    Cerrar Sesión
+                </a>
+            </div>
+        </div>
+    </div>
+
+            <div class="content">
+                <div class="content-header">
+                    <h1>Panel de Administración</h1>
+                    <p>Bienvenido al panel de administración de Servicios de AutoGarantía.</p>
+                    <p class="description">Desde aquí, puede gestionar clientes, vehículos, garantías, servicios, insumos y generar reportes.</p>
+                </div>
+
+                <div class="cards-grid">
+                    <!-- Gestionar Clientes -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon clients">
+                                <span class="material-icons">group</span>
+                            </div>
+                        </div>
+                        <h3>Gestionar Clientes</h3>
+                        <p>Ver, agregar o editar información de clientes.</p>
+                        <a href="Clientes/index.html" class="card-button">Ir a Gestionar Clientes</a>
+                    </div>
+
+                    <!-- Gestionar Vehículos -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon vehicles">
+                                <span class="material-icons">directions_car</span>
+                            </div>
+                        </div>
+                        <h3>Gestionar Vehículos</h3>
+                        <p>Registrar nuevos vehículos y asignar garantías.</p>
+                        <a href="Vehiculos/index.html" class="card-button">Ir a Vehículos</a>
+                    </div>
+
+                    <!-- Generar Reportes -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon reports">
+                                <span class="material-icons">analytics</span>
+                            </div>
+                        </div>
+                        <h3>Generar Reportes</h3>
+                        <p>Acceder a varios reportes del sistema.</p>
+                        <a href="Reportes/index.html" class="card-button">Ir a Reportes</a>
+                    </div>
+
+                    <!-- Control de Garantías -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon warranties">
+                                <span class="material-icons">verified_user</span>
+                            </div>
+                        </div>
+                        <h3>Control de Garantías</h3>
+                        <p>Supervisar los períodos de garantía de los vehículos.</p>
+                        <a href="Garantias/index.html" class="card-button">Ir a Control de Garantías</a>
+                    </div>
+
+                    <!-- Catálogo de Servicios -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon services">
+                                <span class="material-icons">build</span>
+                            </div>
+                        </div>
+                        <h3>Catálogo de Servicios</h3>
+                        <p>Definir los servicios permitidos.</p>
+                        <a href="Servicios/Index.html" class="card-button">Ir a Catálogo de Servicios</a>
+                    </div>
+
+                    <!-- Catálogo de Insumos -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon spare-parts">
+                                <span class="material-icons">inventory_2</span>
+                            </div>
+                        </div>
+                        <h3>Catálogo de Insumos</h3>
+                        <p>Gestionar los insumos registrados.</p>
+                        <a href="insumos/index.html" class="card-button">Ir a Catálogo de Insumos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

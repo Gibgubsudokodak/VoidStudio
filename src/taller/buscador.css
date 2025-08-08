@@ -1,0 +1,563 @@
+/* ============================================= */
+/* RESET Y ESTILOS BASE                          */
+/* ============================================= */
+/*
+  Establece valores base para todos los elementos 
+  y estilos generales del cuerpo del documento
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* ============================================= */
+/* ESTRUCTURA PRINCIPAL                          */
+/* ============================================= */
+/*
+  Contenedor principal y disposición del layout
+  con sidebar y área de contenido principal
+*/
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 250px; /* Ajuste para el sidebar */
+    padding: 0;
+}
+
+/* ============================================= */
+/* BARRA LATERAL (SIDEBAR)                       */
+/* ============================================= */
+/*
+  Estilos para el panel de navegación lateral
+  con menú desplegable y elementos interactivos
+*/
+/* Sidebar */
+        .sidebar {
+            width: 250px;
+            background: #1b2232;
+            color: white;
+            padding: 0;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        
+        .sidebar-header {
+            padding: 20px;
+            background: #1b2232;
+            border-bottom: 1px solid #5a6681;
+        }
+        
+        .sidebar-header h2 {
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .sidebar-header .icon {
+            width: 20px;
+            height: 20px;
+            background: #ff00f2;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+        
+        .sidebar-menu {
+            padding: 0;
+            list-style: none;
+        }
+        
+        .sidebar-menu li {
+            border-bottom: 1px solid #1b2232;
+        }
+        
+        .sidebar-menu a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 20px;
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .sidebar-menu a:hover {
+            background: #2d3953;
+            color: white;
+        }
+        
+        .sidebar-menu a.active {
+            background: #2d3953;
+            color: white;
+            position: relative;
+        }
+        
+        .sidebar-menu a.active::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #3498db;
+        }
+
+
+/* ============================================= */
+/* CABECERA PRINCIPAL                           */
+/* ============================================= */
+/*
+  Estilos para la barra superior con título,
+  controles y perfil de usuario
+*/
+.header {
+    background: white;
+    padding: 16px 24px;
+    border-bottom: 1px solid #e1e8ed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-title .car-icon {
+    width: 32px;
+    height: 32px;
+    background: #184c6f;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+}
+
+.header-title h1 {
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.header .profile {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-size: 16px;
+}
+
+.header .profile:hover {
+    transform: scale(1.05);
+    border-color: #4361ee;
+    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+}
+
+/* ============================================= */
+/* PERFIL DE USUARIO Y DROPDOWN                  */
+/* ============================================= */
+/*
+  Estilos para el menú desplegable del perfil
+  con información del usuario y opciones
+*/
+.profile-container {
+    position: relative;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e1e8ed;
+    min-width: 220px;
+    z-index: 1000;
+}
+
+.profile-container:focus-within .profile-dropdown,
+.profile-container:hover .profile-dropdown {
+    display: block;
+}
+
+.dropdown-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f3f7;
+}
+
+.dropdown-header .user-name {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.dropdown-header .user-role {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    padding: 8px 0;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #f8f9fa;
+    color:#4361ee;
+}
+
+.dropdown-item .item-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: white;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background: #f0f3f7;
+    margin: 8px 0;
+}
+
+/* ============================================= */
+/* CONTENIDO PRINCIPAL                          */
+/* ============================================= */
+/*
+  Estilos para el área de contenido principal
+  con encabezados y descripciones
+*/
+.content {
+    padding: 32px 24px;
+}
+
+.content-header {
+    margin-bottom: 32px;
+}
+
+.content-header h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.content-header p {
+    color: #7f8c8d;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.content-header .description {
+    color: #2c3e50;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+/* ============================================= */
+/* TARJETAS DE OPCIONES                         */
+/* ============================================= */
+/*
+  Estilos para la cuadrícula de tarjetas
+  que muestran las diferentes opciones del sistema
+*/
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid #e1e8ed;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Variantes de iconos */
+.card-icon.search {
+    background: linear-gradient(135deg, #4f8cff, #2356c7);
+}
+.card-icon.register {
+    background: linear-gradient(135deg, #2ecc71, #11998e);
+}
+.card-icon.warranties {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+.card-icon.services {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+.card-icon.reports {
+    background: linear-gradient(135deg, #9b59b6, #6d2177);
+}
+
+.card-content h3,
+.card h3 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.card-content p,
+.card p {
+    color: #7f8c8d;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    text-decoration: none;
+    background-color: #4361ee;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.card-button:hover {
+    background-color: #3a56d4;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+}
+
+/* ============================================= */
+/* ACCIONES PENDIENTES                          */
+/* ============================================= */
+/*
+  Estilos para la sección de acciones pendientes
+  con mensaje de estado
+*/
+.pending-actions {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid #e1e8ed;
+    margin-top: 24px;
+}
+
+.pending-actions h2 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.pending-actions p {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pending-content {
+    color: #95a5a6;
+    font-style: italic;
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px dashed #e1e8ed;
+    border-radius: 8px;
+}
+
+/* ============================================= */
+/* FORMULARIO DE BÚSQUEDA                       */
+/* ============================================= */
+/*
+  Estilos para el formulario de búsqueda avanzada
+  con controles de entrada y filtros
+*/
+.search-form {
+    background: white;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid #e1e8ed;
+    margin-bottom: 24px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 200px auto;
+    gap: 24px;
+    align-items: end;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    background: white;
+}
+
+.form-select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f8f9fa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: #3a56d4;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    background: white;
+}
+
+.search-button {
+    padding: 12px 24px;
+    background: #3a56d4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    height: 44px;
+}
+
+.search-button:hover {
+    background: #294be0;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+}
+
+/* ============================================= */
+/* DISEÑO RESPONSIVE                             */
+/* ============================================= */
+/*
+  Media queries para adaptar la interfaz
+  a diferentes tamaños de pantalla
+*/
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        padding: 20px 16px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .search-button {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoGarantía - Panel del Taller</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>
+                    <span class="icon">AG</span>
+                    AutoGarantía
+                </h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="index.html" class="active">
+                        <span class="material-icons">home</span>
+                        Panel Principal
+                    </a>
+                </li>
+                <li>
+                    <a href="buscador.html">
+                        <span class="material-icons">search</span>
+                        Buscar Cliente/Vehículo
+                    </a>
+                </li>
+                <li>
+                    <a href="resgistros.html">
+                        <span class="material-icons">build</span>
+                        Registrar Servicio
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <div class="header-title">
+                    <div class="car-icon">
+                        <span class="material-icons">directions_car</span>
+                    </div>
+                    <h1>Servicios de AutoGarantía</h1>
+                </div>
+                
+                <div class="profile-container" tabindex="0">
+                    <div class="profile">A</div>
+                    <div class="profile-dropdown">
+                        <div class="dropdown-header">
+                            <div class="user-name">Admin User</div>
+                            <div class="user-role">Administrador</div>
+                        </div>
+                       <div class="dropdown-menu">
+                            <a href="../admin/index.html" class="dropdown-item">
+                                <span class="material-icons">admin_panel_settings</span>
+                                Panel de Administrador
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="/index.html" class="dropdown-item">
+                                <span class="material-icons">logout</span>
+                                Cerrar Sesión
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+                <div class="content-header">
+                    <h1>Panel del Taller</h1>
+                    <p>Bienvenido al portal de Servicios de AutoGarantía para talleres autorizados.</p>
+                    <p class="description"><strong>Use la navegación o las acciones rápidas a continuación para gestionar los servicios de garantía.</strong></p>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="cards-grid">
+                    <!-- Buscar Cliente/Vehículo -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon search">
+                                <span class="material-icons">search</span>
+                            </div>
+                            <h3>Buscar Cliente/Vehículo</h3>
+                        </div>
+                        <p>Buscar clientes o vehículos por DNI o nombre para verificar estado de garantía.</p>
+                        <a href="#" class="card-button">Ir a Buscar Cliente/Vehículo</a>
+                    </div>
+
+                    <!-- Acciones Pendientes -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon warranties">
+                                <span class="material-icons">assignment</span>
+                            </div>
+                            <h3>Acciones Pendientes</h3>
+                        </div>
+                        <p>Resumen rápido de tareas que requieren atención.</p>
+                        <div class="pending-content">
+                            <p>Espacio para solicitudes de validación de garantía o seguimientos de servicio</p>
+                        </div>
+                    </div>
+
+                    <!-- Registrar Nuevo Servicio -->
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon services">
+                                <span class="material-icons">build</span>
+                            </div>
+                            <h3>Registrar Nuevo Servicio</h3>
+                        </div>
+                        <p>Registrar un nuevo servicio realizado bajo garantía, incluyendo repuestos utilizados.</p>
+                        <a href="#" class="card-button">Ir a Registrar Nuevo Servicio</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Servicios de AutoGarantía</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar" aria-label="Menú principal">
+            <div class="sidebar-header">
+                <h2>
+                    <span class="icon" aria-hidden="true">AG</span>
+                    AutoGarantía
+                </h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="../index.html"><span class="material-icons" aria-hidden="true">dashboard</span>Panel Principal</a></li>
+                <li><a href="../Clientes/index.html"><span class="material-icons" aria-hidden="true">people</span>Clientes</a></li>
+                <li><a href="index.html" class="active"><span class="material-icons" aria-hidden="true">directions_car</span>Vehículos</a></li>
+                <li><a href="../Garantias/index.html"><span class="material-icons" aria-hidden="true">verified</span>Garantías</a></li>
+                <li><a href="../Servicios/Index.html"><span class="material-icons" aria-hidden="true">handyman</span>Catálogo de Servicios</a></li>
+                <li><a href="../insumos/index.html"><span class="material-icons" aria-hidden="true">inventory</span>Catálogo de Insumos</a></li>
+                <li><a href="../Reportes/index.html" ><span class="material-icons" aria-hidden="true">assessment</span>Reportes</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+    <div class="header">
+        <div class="header-title">
+            <div class="car-icon">
+                <span class="material-icons">directions_car</span>
+            </div>
+            <h1>Servicios de AutoGarantía</h1>
+        </div>
+        
+        <div class="profile-container" tabindex="0">
+            <div class="profile">A</div>
+            <div class="profile-dropdown">
+                <div class="dropdown-header">
+                    <div class="user-name">Admin User</div>
+                    <div class="user-role">Administrador</div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <a href="/index.html" class="dropdown-item">
+                    <span class="material-icons">logout</span>
+                    Cerrar Sesión
+                </a>
+            </div>
+        </div>
+    </div>
+
+            <div class="content">
+                <h1>Gestión de Vehículos</h1>
+                <p style="margin-bottom: 24px; color: #7f8c8d;">Registrar vehículos, asignar garantías y asociarlos con clientes.</p>
+                <div class="search-actions">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar vehículos (modelo, Nº serie)...">
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-secondary">Exportar</button>
+                        <label for="modal-toggle" class="btn btn-primary">Nuevo Vehículo</label>
+                    </div>
+                </div>
+            
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Número de Serie</th>
+                                <th>Propietario</th>
+                                <th>Fecha de Compra</th>
+                                <th>Garantía (KM)</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-id="1">
+                                <td>Sedan X Pro</td>
+                                <td>SNX123ABC456</td>
+                                <td>John Doe</td>
+                                <td>15/06/2022</td>
+                                <td>50,000</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <label for="modal-toggle" class="action-icon edit-icon">✏️</label>
+                                        <button class="action-icon delete-icon">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-id="2">
+                                <td>SUV Y Adventure</td>
+                                <td>SNY789DEF012</td>
+                                <td>John Doe</td>
+                                <td>20/01/2023</td>
+                                <td>75,000</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <label for="modal-toggle" class="action-icon edit-icon">✏️</label>
+                                        <button class="action-icon delete-icon">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-id="3">
+                                <td>Hatchback Z City</td>
+                                <td>SNZ456GHI345</td>
+                                <td>Jane Smith</td>
+                                <td>01/11/2023</td>
+                                <td class="na-value">n/a</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <label for="modal-toggle" class="action-icon edit-icon">✏️</label>
+                                        <button class="action-icon delete-icon">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <!-- Modal -->
+   <input type="checkbox" id="modal-toggle" class="modal-toggle" hidden>
+  <!-- Modal Structure -->
+<label for="modal-toggle" class="modal-overlay"></label>
+<div class="modal">
+  <div class="modal-content">
+    <label for="modal-toggle" class="close-modal">&times;</label>
+    <h2>Agregar / Editar Vehículo</h2>
+    <form id="vehicleForm" action="" method="POST">
+      <div class="form-group">
+        <label for="marcaModelo">Vehículo (Marca y Modelo)</label>
+        <input type="text" id="marcaModelo" name="marcaModelo" required>
+      </div>
+      <div class="form-group">
+        <label for="numeroSerie">Número de Chasis / VIN</label>
+        <input type="text" id="numeroSerie" name="numeroSerie" required>
+      </div>
+      <div class="form-group">
+        <label for="fechaInicioGarantia">Fecha de Inicio de la Garantía</label>
+        <input type="date" id="fechaInicioGarantia" name="fechaInicioGarantia" required>
+      </div>
+      <div class="form-group">
+        <label for="fechaFinGarantia">Fecha de Fin de la Garantía</label>
+        <input type="date" id="fechaFinGarantia" name="fechaFinGarantia" required>
+      </div>
+      <div class="form-group">
+        <label for="kmInicioGarantia">Kilometraje al Inicio de la Garantía</label>
+        <input type="number" id="kmInicioGarantia" name="kmInicioGarantia" required>
+      </div>
+      <div class="form-group">
+        <label for="kmActual">Kilometraje Actual del Vehículo</label>
+        <input type="number" id="kmActual" name="kmActual" required>
+      </div>
+      <div class="form-group">
+        <label for="tipoGarantia">Tipo de Garantía</label>
+        <select id="tipoGarantia" name="tipoGarantia" required>
+          <option value="">-- Seleccione --</option>
+          <option value="Garantía del Fabricante (Oficial/de Fábrica)">Garantía del Fabricante (Oficial/de Fábrica)</option>
+          <option value="Garantía Mecánica (Vehículos Usados)">Garantía Mecánica (Vehículos Usados)</option>
+          <option value="Garantía Extendida (Contrato de Servicio del Vehículo)">Garantía Extendida (Contrato de Servicio del Vehículo)</option>
+          <option value="Garantía de Piezas de Repuesto">Garantía de Piezas de Repuesto</option>
+          <option value="Garantías Especiales o Adicionales">Garantías Especiales o Adicionales</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="estadoGarantia">Estado de la Garantía</label>
+        <input type="text" id="estadoGarantia" name="estadoGarantia" readonly placeholder="Se calculará automáticamente">
+      </div>
+      <div class="form-group">
+        <label for="matricula">Matrícula</label>
+        <input type="text" id="matricula" name="matricula" required>
+      </div>
+      <div class="form-group">
+        <label for="propietario">Propietario</label>
+        <input type="text" id="propietario" name="propietario" required>
+      </div>
+      <div class="form-group">
+        <label for="dni">DNI</label>
+        <input type="text" id="dni" name="dni" required>
+      </div>
+      <div class="form-group">
+        <label for="fechaCompra">Fecha de Compra</label>
+        <input type="date" id="fechaCompra" name="fechaCompra" required>
+      </div>
+      <div class="form-actions">
+        <label for="modal-toggle" class="btn btn-secondary">Cancelar</label>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

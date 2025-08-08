@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Servicios de AutoGarantía</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar" aria-label="Menú principal">
+            <div class="sidebar-header">
+                <h2>
+                    <span class="icon" aria-hidden="true">AG</span>
+                    AutoGarantía
+                </h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="../index.html"><span class="material-icons" aria-hidden="true">dashboard</span>Panel Principal</a></li>
+                <li><a href="../Clientes/index.html"><span class="material-icons" aria-hidden="true">people</span>Clientes</a></li>
+                <li><a href="../Vehiculos/index.html"><span class="material-icons" aria-hidden="true">directions_car</span>Vehículos</a></li>
+                <li><a href="../Garantias/index.html"><span class="material-icons" aria-hidden="true">verified</span>Garantías</a></li>
+                <li><a href="Index.html" class="active"><span class="material-icons" aria-hidden="true">handyman</span>Catálogo de Servicios</a></li>
+                <li><a href="../insumos/index.html"><span class="material-icons" aria-hidden="true">inventory</span>Catálogo de Insumos</a></li>
+                <li><a href="../Reportes/index.html" ><span class="material-icons" aria-hidden="true">assessment</span>Reportes</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+       
+            <div class="main-content">
+    <div class="header">
+        <div class="header-title">
+            <div class="car-icon">
+                <span class="material-icons">directions_car</span>
+            </div>
+            <h1>Servicios de AutoGarantía</h1>
+        </div>
+        
+        <div class="profile-container" tabindex="0">
+            <div class="profile">A</div>
+            <div class="profile-dropdown">
+                <div class="dropdown-header">
+                    <div class="user-name">Admin User</div>
+                    <div class="user-role">Administrador</div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <a href="/index.html" class="dropdown-item">
+                    <span class="material-icons">logout</span>
+                    Cerrar Sesión
+                </a>
+            </div>
+        </div>
+    </div>
+
+            <div class="content">
+                <h1>Gestión de Catálogo de Servicios</h1>
+                <p style="margin-bottom: 24px; color: #7f8c8d;">Definir y gestionar servicios permitidos bajo garantía según el modelo del vehículo.</p>
+                
+                <div class="search-actions">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar servicios...">
+                    </div>
+                    <div class="actions">
+                        <a href="#serviceModal" class="btn btn-primary">Agregar Nuevo Servicio</a>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre del Servicio</th>
+                                <th>Descripción</th>
+                                <th>Modelos Aplicables</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cambio de Aceite</td>
+                                <td>Cambio estándar de aceite de motor y filtro.</td>
+                                <td>Sedan X, SUV Y</td>
+                                <td>
+                                    <div class="action-icons">
+                                       <label for="modal-toggle" class="action-icon edit-icon" title="Editar">✏️</label>
+                                        <button class="action-icon delete-icon" title="Borrar">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Revisión Sistema Eléctrico</td>
+                                <td>Revisión completa de componentes eléctricos.</td>
+                                <td>Sedan X, Hatchback Z</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <label for="modal-toggle" class="action-icon edit-icon" title="Editar">✏️</label>
+                                        <button class="action-icon delete-icon" title="Borrar">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Inspección de Frenos</td>
+                                <td>Inspección de pastillas, discos y líquido de frenos.</td>
+                                <td>Todos</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <label for="modal-toggle" class="action-icon edit-icon" title="Editar">✏️</label>
+                                        <button class="action-icon delete-icon" title="Borrar">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Modal para agregar/editar servicio -->
+                <div id="serviceModal" class="modal">
+                    <div class="modal-content">
+                        <a href="#" class="close-modal">&times;</a>
+                        <h2>Agregar Nuevo Servicio</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="serviceName">Nombre del Servicio</label>
+                                <input type="text" id="serviceName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceDescription">Descripción</label>
+                                <textarea id="serviceDescription" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceModels">Modelos Aplicables</label>
+                                <input type="text" id="serviceModels" placeholder="Separar modelos con comas" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceMatricula">Matrícula</label>
+                                <input type="text" id="serviceMatricula">
+                            </div>
+                            <div class="form-actions">
+                                <a href="#" class="btn btn-secondary">Cancelar</a>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

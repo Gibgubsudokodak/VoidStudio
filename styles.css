@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e8f0ff, #f7f9fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo .material-icons {
+    font-size: 32px;
+    margin-right: 10px;
+    color: #2b6cb0;
+}
+
+.logo span {
+    font-size: 20px;
+    color: #2b6cb0;
+    font-weight: bold;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.intro h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.intro p {
+    margin: 10px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.input-with-icon {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-with-icon .material-icons {
+    position: absolute;
+    top: 38px;
+    left: 12px;
+    color: #666;
+    font-size: 20px;
+}
+
+.input-with-icon label {
+    padding-left: 30px;
+}
+
+.input-with-icon input,
+.input-with-icon select {
+    padding-left: 40px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #2b6cb0;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+button:hover {
+    background-color: #234e8c;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    font-size: 13px;
+    color: #2b6cb0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+    color: #1a4f91;
+}
+
+.error-message {
+    color: #e53e3e;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #fff5f5;
+    border-radius: 4px;
+    text-align: center;
+}
+
+@media (max-width: 450px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+}

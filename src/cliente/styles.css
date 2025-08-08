@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e9f1fc;
+  }
+
+  .main-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 0;
+}
+
+.header {
+    background: white;
+    padding: 16px 24px;
+    border-bottom: 1px solid #e1e8ed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-title .car-icon {
+    width: 32px;
+    height: 32px;
+    background: #184c6f;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+}
+
+.header-title h1 {
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+
+
+
+
+
+.header .profile {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-size: 16px;
+}
+
+.header .profile:hover {
+    transform: scale(1.05);
+    border-color: #3498db;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* Profile Dropdown */
+.profile-container {
+    position: relative;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e1e8ed;
+    min-width: 220px;
+    z-index: 1000;
+}
+
+.profile-container:focus-within .profile-dropdown,
+.profile-container:hover .profile-dropdown {
+    display: block;
+}
+
+.dropdown-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f3f7;
+}
+
+.dropdown-header .user-name {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.dropdown-header .user-role {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    padding: 8px 0;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #f8f9fa;
+    color: #3498db;
+}
+
+.dropdown-item .item-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: white;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background: #f0f3f7;
+    margin: 8px 0;
+}
+
+
+
+
+
+
+.header .profile {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-size: 16px;
+}
+
+.header .profile:hover {
+    transform: scale(1.05);
+    border-color: #3498db;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* Profile Dropdown */
+.profile-container {
+    position: relative;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e1e8ed;
+    min-width: 220px;
+    z-index: 1000;
+}
+
+.profile-container:focus-within .profile-dropdown,
+.profile-container:hover .profile-dropdown {
+    display: block;
+}
+
+.dropdown-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f3f7;
+}
+
+.dropdown-header .user-name {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.dropdown-header .user-role {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    padding: 8px 0;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #f8f9fa;
+    color: #3498db;
+}
+
+.dropdown-item .item-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: white;
+}
+
+.dropdown-divider {
+    height: 1px;
+    background: #f0f3f7;
+    margin: 8px 0;
+}
+
+
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .intro-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+  }
+
+  .intro-box h2 {
+    margin: 0 0 10px 0;
+  }
+
+  .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .card .image-container {
+    background-size: cover;
+    background-position: center;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  }
+
+  .card .details {
+    padding: 20px;
+  }
+
+  .card .details h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+  }
+
+  .card .details p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 8px;
+  }
+
+  .activa {
+    background-color: #e0f7ec;
+    color: #1b8f5c;
+    border: 1px solid #1b8f5c;
+  }
+
+  .expirada {
+    background-color: #fce8e6;
+    color: #d93025;
+    border: 1px solid #d93025;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 16px;
+    font-size: 14px;
+    background-color: #eef3fb;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    transition: background 0.2s;
+  }
+
+  .btn:hover {
+    background-color: #d9e6ff;
+  }
+
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #666;
+  }

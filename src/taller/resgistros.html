@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoGarantía - Registros Enviados</title>
+    <link rel="stylesheet" href="registros.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Botón menú móvil -->
+        <button class="mobile-menu-btn">
+            <span class="material-icons">menu</span>
+        </button>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>
+                    <span class="icon">AG</span>
+                    AutoGarantía
+                </h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="index.html">
+                        <span class="material-icons">home</span>
+                        Panel Principal
+                    </a>
+                </li>
+                <li>
+                    <a href="buscador.html">
+                        <span class="material-icons">search</span>
+                        Buscar Cliente/Vehículo
+                    </a>
+                </li>
+                <li>
+                    <a href="registros.html" class="active">
+                        <span class="material-icons">list_alt</span>
+                        Registros Enviados
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <div class="header-title">
+                    <div class="car-icon">
+                        <span class="material-icons">directions_car</span>
+                    </div>
+                    <h1>Registros Enviados</h1>
+                </div>
+                
+                <div class="profile-container" tabindex="0">
+                    <div class="profile">A</div>
+                    <div class="profile-dropdown">
+                        <div class="dropdown-header">
+                            <div class="user-name">Admin User</div>
+                            <div class="user-role">Administrador</div>
+                        </div>
+                       <div class="dropdown-menu">
+                            <a href="../admin/index.html" class="dropdown-item">
+                                <span class="material-icons">admin_panel_settings</span>
+                                Panel de Administrador
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="/index.html" class="dropdown-item">
+                                <span class="material-icons">logout</span>
+                                Cerrar Sesión
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+                <div class="content-header">
+                    <h1>Registros de Servicio</h1>
+                    <p>Historial completo de todos los registros de servicio enviados al sistema.</p>
+                </div>
+
+                <!-- Estadísticas rápidas -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number total">156</div>
+                        <div class="stat-label">Total Registros</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number approved">89</div>
+                        <div class="stat-label">Aprobados</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number pending">67</div>
+                        <div class="stat-label">Pendientes</div>
+                    </div>
+                </div>
+
+                <!-- Filtros y tabla -->
+                <div class="records-section">
+                    <h2>Buscar y Filtrar Registros</h2>
+                    <p>Utiliza los filtros para encontrar registros específicos por cliente, vehículo o estado.</p>
+                    
+                    <div class="search-filter">
+                        <input type="text" class="search-input" placeholder="Buscar por cliente, vehículo o ID de registro..." id="searchInput">
+                        <select class="filter-select" id="statusFilter">
+                            <option value="">Todos los estados</option>
+                            <option value="approved">Aprobado</option>
+                            <option value="pending">Pendiente</option>
+                        </select>
+                        <button class="search-button">
+                            <span class="material-icons">search</span>
+                            Buscar
+                        </button>
+                    </div>
+
+                    <!-- Tabla de registros -->
+                    <div class="records-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Fecha</th>
+                                    <th>Vehículo</th>
+                                    <th>Cliente</th>
+                                    <th>Servicio</th>
+                                    <th>Estado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="recordsTableBody">
+                                <!-- Registro 1 -->
+                                <tr>
+                                    <td><strong>#00125</strong></td>
+                                    <td>08/06/2025</td>
+                                    <td>Toyota Corolla<br><small>(ABC-1234)</small></td>
+                                    <td>Juan Pérez</td>
+                                    <td>Cambio de aceite</td>
+                                    <td><span class="status approved">Aprobado</span></td>
+                                    <td>
+                                        <label for="modal-toggle-1" class="action-btn view" title="Ver detalles">
+                                            <span class="material-icons">visibility</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <!-- Modal para Registro 1 -->
+                                <input type="checkbox" id="modal-toggle-1" class="modal-toggle">
+                                <div class="modal">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2>Detalles del Cliente</h2>
+                                            <label for="modal-toggle-1" class="close-btn">&times;</label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="client-info">
+                                                <div class="info-row">
+                                                    <span class="info-label">Nombre:</span>
+                                                    <span class="info-value">Juan Pérez</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Email:</span>
+                                                    <span class="info-value">juan.perez@example.com</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Teléfono:</span>
+                                                    <span class="info-value">555-1234</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Dirección:</span>
+                                                    <span class="info-value">Calle Falsa 123</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <label for="modal-toggle-1" class="card-button">Cerrar</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Registro 2 -->
+                                <tr>
+                                    <td><strong>#00124</strong></td>
+                                    <td>07/06/2025</td>
+                                    <td>Honda Civic<br><small>(XYZ-5678)</small></td>
+                                    <td>María González</td>
+                                    <td>Revisión de frenos</td>
+                                    <td><span class="status pending">Pendiente</span></td>
+                                    <td>
+                                        <label for="modal-toggle-2" class="action-btn view" title="Ver detalles">
+                                            <span class="material-icons">visibility</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <!-- Modal para Registro 2 -->
+                                <input type="checkbox" id="modal-toggle-2" class="modal-toggle">
+                                <div class="modal">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2>Detalles del Cliente</h2>
+                                            <label for="modal-toggle-2" class="close-btn">&times;</label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="client-info">
+                                                <div class="info-row">
+                                                    <span class="info-label">Nombre:</span>
+                                                    <span class="info-value">María González</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Email:</span>
+                                                    <span class="info-value">maria.gonzalez@example.com</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Teléfono:</span>
+                                                    <span class="info-value">555-5678</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Dirección:</span>
+                                                    <span class="info-value">Avenida Siempreviva 742</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <label for="modal-toggle-2" class="card-button">Cerrar</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Registro 3 -->
+                                <tr>
+                                    <td><strong>#00122</strong></td>
+                                    <td>03/06/2025</td>
+                                    <td>Ford Focus<br><small>(GHI-3456)</small></td>
+                                    <td>Ana Martínez</td>
+                                    <td>Cambio de filtros</td>
+                                    <td><span class="status approved">Aprobado</span></td>
+                                    <td>
+                                        <label for="modal-toggle-3" class="action-btn view" title="Ver detalles">
+                                            <span class="material-icons">visibility</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <!-- Modal para Registro 3 -->
+                                <input type="checkbox" id="modal-toggle-3" class="modal-toggle">
+                                <div class="modal">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2>Detalles del Cliente</h2>
+                                            <label for="modal-toggle-3" class="close-btn">&times;</label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="client-info">
+                                                <div class="info-row">
+                                                    <span class="info-label">Nombre:</span>
+                                                    <span class="info-value">Ana Martínez</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Email:</span>
+                                                    <span class="info-value">ana.martinez@example.com</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Teléfono:</span>
+                                                    <span class="info-value">555-3456</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Dirección:</span>
+                                                    <span class="info-value">Calle Primavera 789</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <label for="modal-toggle-3" class="card-button">Cerrar</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Registro 4 -->
+                                <tr>
+                                    <td><strong>#00121</strong></td>
+                                    <td>01/06/2025</td>
+                                    <td>Chevrolet Spark<br><small>(JKL-7890)</small></td>
+                                    <td>Roberto Silva</td>
+                                    <td>Mantenimiento general</td>
+                                    <td><span class="status pending">Pendiente</span></td>
+                                    <td>
+                                        <label for="modal-toggle-4" class="action-btn view" title="Ver detalles">
+                                            <span class="material-icons">visibility</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <!-- Modal para Registro 4 -->
+                                <input type="checkbox" id="modal-toggle-4" class="modal-toggle">
+                                <div class="modal">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2>Detalles del Cliente</h2>
+                                            <label for="modal-toggle-4" class="close-btn">&times;</label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="client-info">
+                                                <div class="info-row">
+                                                    <span class="info-label">Nombre:</span>
+                                                    <span class="info-value">Roberto Silva</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Email:</span>
+                                                    <span class="info-value">roberto.silva@example.com</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Teléfono:</span>
+                                                    <span class="info-value">555-7890</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Dirección:</span>
+                                                    <span class="info-value">Calle del Sol 321</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <label for="modal-toggle-4" class="card-button">Cerrar</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Registro 5 -->
+                                <tr>
+                                    <td><strong>#00120</strong></td>
+                                    <td>30/05/2025</td>
+                                    <td>Hyundai Elantra<br><small>(MNO-2468)</small></td>
+                                    <td>Luis Rodríguez</td>
+                                    <td>Cambio de batería</td>
+                                    <td><span class="status approved">Aprobado</span></td>
+                                    <td>
+                                        <label for="modal-toggle-5" class="action-btn view" title="Ver detalles">
+                                            <span class="material-icons">visibility</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <!-- Modal para Registro 5 -->
+                                <input type="checkbox" id="modal-toggle-5" class="modal-toggle">
+                                <div class="modal">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2>Detalles del Cliente</h2>
+                                            <label for="modal-toggle-5" class="close-btn">&times;</label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="client-info">
+                                                <div class="info-row">
+                                                    <span class="info-label">Nombre:</span>
+                                                    <span class="info-value">Luis Rodríguez</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Email:</span>
+                                                    <span class="info-value">luis.rodriguez@example.com</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Teléfono:</span>
+                                                    <span class="info-value">555-2468</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Dirección:</span>
+                                                    <span class="info-value">Boulevard Central 456</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <label for="modal-toggle-5" class="card-button">Cerrar</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Registro 6 -->
+                                <tr>
+                                    <td><strong>#00119</strong></td>
+                                    <td>28/05/2025</td>
+                                    <td>Volkswagen Gol<br><small>(PQR-1357)</small></td>
+                                    <td>Carmen Vargas</td>
+                                    <td>Revisión general</td>
+                                    <td><span class="status pending">Pendiente</span></td>
+                                    <td>
+                                        <label for="modal-toggle-6" class="action-btn view" title="Ver detalles">
+                                            <span class="material-icons">visibility</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <!-- Modal para Registro 6 -->
+                                <input type="checkbox" id="modal-toggle-6" class="modal-toggle">
+                                <div class="modal">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2>Detalles del Cliente</h2>
+                                            <label for="modal-toggle-6" class="close-btn">&times;</label>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="client-info">
+                                                <div class="info-row">
+                                                    <span class="info-label">Nombre:</span>
+                                                    <span class="info-value">Carmen Vargas</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Email:</span>
+                                                    <span class="info-value">carmen.vargas@example.com</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Teléfono:</span>
+                                                    <span class="info-value">555-1357</span>
+                                                </div>
+                                                <div class="info-row">
+                                                    <span class="info-label">Dirección:</span>
+                                                    <span class="info-value">Avenida Norte 789</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <label for="modal-toggle-6" class="card-button">Cerrar</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Paginación -->
+                    <div class="pagination">
+                        <button class="pagination-btn">&laquo;</button>
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">&raquo;</button>
+                    </div>
+                </div>
+
+                <!-- Mensaje de no encontrado (oculto por defecto) -->
+                <div class="not-found-message" id="notFoundMessage">
+                    <div class="not-found-card">
+                        <div class="not-found-icon">
+                            <span class="material-icons">error_outline</span>
+                        </div>
+                        <h2>Vehículo No Encontrado</h2>
+                        <p>El ID del vehículo especificado no fue encontrado o es inválido. Por favor, regrese y seleccione un vehículo.</p>
+                        <button class="card-button">Volver</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

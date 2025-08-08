@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoGarantía - Buscar Cliente/Vehículo</title>
+    <link rel="stylesheet" href="buscador.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>
+                    <span class="icon">AG</span>
+                    AutoGarantía
+                </h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="index.html">
+                        <span class="material-icons">home</span>
+                        Panel Principal
+                    </a>
+                </li>
+                <li>
+                    <a href="buscador.html" class="active">
+                        <span class="material-icons">search</span>
+                        Buscar Cliente/Vehículo
+                    </a>
+                </li>
+                <li>
+                    <a href="resgistros.html">
+                        <span class="material-icons">build</span>
+                        Registrar Servicio
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <div class="header-title">
+                    <div class="car-icon">
+                        <span class="material-icons">directions_car</span>
+                    </div>
+                    <h1>Buscar Cliente/Vehículo</h1>
+                </div>
+                
+                <div class="profile-container" tabindex="0">
+                    <div class="profile">A</div>
+                    <div class="profile-dropdown">
+                        <div class="dropdown-header">
+                            <div class="user-name">Admin User</div>
+                            <div class="user-role">Administrador</div>
+                        </div>
+                        <div class="dropdown-menu">
+                            <a href="../admin/index.html" class="dropdown-item">
+                                <span class="material-icons">admin_panel_settings</span>
+                                Panel de Administrador
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="/index.html" class="dropdown-item">
+                                <span class="material-icons">logout</span>
+                                Cerrar Sesión
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+                <div class="content-header">
+                    <h1>Buscar Cliente / Vehículo</h1>
+                    <p>Buscar clientes por DNI/Nombre o vehículos por Número de Serie para verificar el estado de la garantía.</p>
+                </div>
+
+                <!-- Search Form -->
+                <div class="search-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="searchTerm">Término de Búsqueda</label>
+                            <input type="text" id="searchTerm" class="form-input" placeholder="Ingrese DNI">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="searchType">Buscar Por</label>
+                            <select id="searchType" class="form-select">
+                                <option value="dni">DNI Cliente</option>
+                                <option value="nombre">Nombre Cliente</option>
+                                <option value="vehiculo">Número de Serie Vehículo</option>
+                            </select>
+                        </div>
+                        
+                        <button type="button" class="search-button">
+                            <span class="material-icons">search</span>
+                            Buscar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

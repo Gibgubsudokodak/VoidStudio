@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis Vehículos - Servicio Automotriz Garantizado</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <!-- Main Content -->
+ <div class="header">
+    <div class="header-title">
+        <div class="car-icon">
+            <span class="material-icons">directions_car</span>
+        </div>
+        <h1>Servicios de AutoGarantía</h1>
+    </div>
+    
+    <div class="profile-container" tabindex="0">
+        <div class="profile">A</div>
+        <div class="profile-dropdown">
+            <div class="dropdown-header">
+                <div class="user-name">Admin User</div>
+            </div>
+            <div class="dropdown-menu">
+                <div class="dropdown-divider"></div>
+                <a href="/index.html" class="dropdown-item">
+                    <span class="material-icons">logout</span>
+                    Cerrar Sesión
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="container">
+    <div class="intro-box">
+      <h2>Mis Vehículos</h2>
+      <p>Vea sus vehículos registrados y el estado de su garantía. Acceda al historial de servicios de cada vehículo.</p>
+    </div>
+
+    <div class="cards">
+      <!-- Vehículo con garantía expirada -->
+      <div class="card">
+        <div class="image-container" style="background-image: url('auto_sedan.jpg'); background-color: #2e3a59;">
+          Sedan X Pro
+        </div>
+        <div class="details">
+          <h3>Sedan X Pro <span class="badge expirada">⛔ Garantía Expirada</span></h3>
+          <p>Nº de Serie: SNX123ABC456</p>
+          <p>Comprado: 14/6/2022</p>
+          <p>Garantía expirada el: 14/6/2024</p>
+          <a href="#" class="btn"> ↻ Ver Historial de Servicios</a>
+        </div>
+      </div>
+
+      <!-- Vehículo con garantía activa -->
+      <div class="card">
+        <div class="image-container" style="background-image: url('auto_suv.jpg'); background-color: #1f6d3c;">
+          SUV Y Adventure
+        </div>
+        <div class="details">
+          <h3>SUV Y Adventure <span class="badge activa">🔒 Garantía Activa</span></h3>
+          <p>Nº de Serie: SNY789DEF012</p>
+          <p>Comprado: 19/1/2023</p>
+          <p>Garantía válida hasta: 19/1/2026</p>
+          <a href="sevicios.html" class="btn"> ↻ Ver Historial de Servicios</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Servicios de AutoGarantía. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
