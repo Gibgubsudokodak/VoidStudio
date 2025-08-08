@@ -4,6 +4,7 @@ body {
     background-color: #e9f1fc;
   }
 
+<<<<<<< HEAD
   .main-content {
     flex: 1;
     margin-left: 250px;
@@ -252,6 +253,20 @@ body {
     margin: 8px 0;
 }
 
+=======
+  header {
+    background-color: #e0ecff;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  header h1 {
+    margin: 0;
+    color: #347DFF;
+    font-size: 20px;
+  }
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 
   .container {
     max-width: 1200px;

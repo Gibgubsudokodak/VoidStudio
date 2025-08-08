@@ -6,22 +6,35 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+<<<<<<< HEAD
 }
 
 .login-container {
+=======
+  }
+
+  .login-container {
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     background-color: #fff;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
+<<<<<<< HEAD
 }
 
 .logo {
+=======
+  }
+
+  .logo {
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+<<<<<<< HEAD
 }
 
 .logo .material-icons {
@@ -76,23 +89,100 @@ body {
 }
 
 label {
+=======
+  }
+
+  .logo svg {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    fill: #2b6cb0;
+  }
+
+  .logo span {
+    font-size: 20px;
+    color: #2b6cb0;
+    font-weight: bold;
+  }
+
+  .intro {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .intro h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+  }
+
+  .intro p {
+    margin: 10px 0 0;
+    color: #666;
+    font-size: 14px;
+  }
+
+  .online-users {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .online-users h3 {
+    margin: 0 0 10px 0;
+    color: #2b6cb0;
+    font-size: 16px;
+  }
+
+  .online-users ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .online-users li {
+    padding: 8px;
+    border-bottom: 1px solid #e9ecef;
+    color: #4a5568;
+  }
+
+  .online-users li:last-child {
+    border-bottom: none;
+  }
+
+  label {
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     font-size: 14px;
     color: #333;
     display: block;
     margin-bottom: 6px;
     margin-top: 15px;
+<<<<<<< HEAD
 }
 
 input, select {
+=======
+  }
+
+  input, select {
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     width: 100%;
     padding: 12px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 6px;
     box-sizing: border-box;
+<<<<<<< HEAD
 }
 
 button {
+=======
+  }
+
+  button {
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     width: 100%;
     padding: 12px;
     margin-top: 20px;
@@ -103,6 +193,7 @@ button {
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+<<<<<<< HEAD
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,10 +210,25 @@ button:hover {
 }
 
 .forgot-password a {
+=======
+  }
+
+  button:hover {
+    background-color: #234e8c;
+  }
+
+  .forgot-password {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .forgot-password a {
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     font-size: 13px;
     color: #2b6cb0;
     text-decoration: none;
     transition: color 0.2s ease;
+<<<<<<< HEAD
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,3 +255,17 @@ button:hover {
         padding: 30px 20px;
     }
 }
+=======
+  }
+
+  .forgot-password a:hover {
+    text-decoration: underline;
+    color: #1a4f91;
+  }
+
+  @media (max-width: 450px) {
+    .login-container {
+      padding: 30px 20px;
+    }
+  }
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0

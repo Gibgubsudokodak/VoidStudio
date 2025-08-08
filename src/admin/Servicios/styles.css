@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +15,24 @@ body {
     display: flex;
     min-height: 100vh;
 }
+=======
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 
         /* Sidebar */
         .sidebar {
@@ -25,13 +44,21 @@ body {
             height: 100vh;
             overflow-y: auto;
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
         .sidebar-header {
             padding: 20px;
             background: #1b2232;
             border-bottom: 1px solid #5a6681;
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
         .sidebar-header h2 {
             font-size: 16px;
             font-weight: 600;
@@ -39,27 +66,47 @@ body {
             align-items: center;
             gap: 8px;
         }
+<<<<<<< HEAD
         
         .sidebar-header .icon {
             width: 20px;
             height: 20px;
             background: #ff00f2;
+=======
+
+        .sidebar-header .icon {
+            width: 20px;
+            height: 20px;
+            background: #ff00ff;
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
             border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 12px;
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
         .sidebar-menu {
             padding: 0;
             list-style: none;
         }
+<<<<<<< HEAD
         
         .sidebar-menu li {
             border-bottom: 1px solid #1b2232;
         }
         
+=======
+
+        .sidebar-menu li {
+            border-bottom: 1px solid #1b2232;
+        }
+
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
         .sidebar-menu a {
             display: flex;
             align-items: center;
@@ -70,11 +117,16 @@ body {
             font-size: 14px;
             transition: all 0.3s ease;
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
         .sidebar-menu a:hover {
             background: #2d3953;
             color: white;
         }
+<<<<<<< HEAD
         
         .sidebar-menu a.active {
             background: #2d3953;
@@ -90,6 +142,12 @@ body {
             bottom: 0;
             width: 4px;
             background: #3498db;
+=======
+
+        .sidebar-menu a.active {
+            background: #2d3953;
+            color: white;
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
         }
 
         /* Main Content */
@@ -113,6 +171,7 @@ body {
             align-items: center;
             gap: 12px;
         }
+<<<<<<< HEAD
         
         .header-title .car-icon {
             width: 32px;
@@ -126,6 +185,9 @@ body {
             font-size: 16px;
         }
         
+=======
+
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
         .header-title h1 {
             font-size: 20px;
             color: #2c3e50;

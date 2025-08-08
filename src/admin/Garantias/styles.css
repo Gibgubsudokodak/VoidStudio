@@ -15,7 +15,10 @@ body {
     min-height: 100vh;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 /* Sidebar */
 .sidebar {
     width: 250px;
@@ -80,6 +83,7 @@ body {
 .sidebar-menu a.active {
     background: #2d3953;
     color: white;
+<<<<<<< HEAD
     position: relative;
 }
 
@@ -94,6 +98,10 @@ body {
 }
 
 
+=======
+}
+
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 /* Main Content */
 .main-content {
     flex: 1;
@@ -116,6 +124,7 @@ body {
     gap: 12px;
 }
 
+<<<<<<< HEAD
 .header-title .car-icon {
     width: 32px;
     height: 32px;
@@ -128,6 +137,8 @@ body {
     font-size: 16px;
 }
 
+=======
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 .header-title h1 {
     font-size: 20px;
     color: #2c3e50;
@@ -428,6 +439,7 @@ td {
 
 /* Estado de la Garantía */
 
+<<<<<<< HEAD
 .status-badge {
     display: inline-block;
     padding: 4px 8px;
@@ -454,6 +466,47 @@ td {
 }
 
 
+=======
+.status-active {
+    color: #2ecc71;
+    font-weight: 500;
+}
+
+.status-expired {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+.status-expiring {
+    color: #f39c12;
+    font-weight: 500;
+}
+
+.action-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.action-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-icon {
+    background: #f1f8fe;
+    color: #3498db;
+}
+
+.edit-icon:hover {
+    background: #e1f0fa;
+}
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -475,6 +528,7 @@ td {
     }
 
     .actions {
+<<<<<<< HEAD
         justify-content: flex-start;
         width: 100%;
     }
@@ -482,5 +536,8 @@ td {
     .btn {
         width: 100%;
         justify-content: center;
+=======
+        justify-content: flex-end;
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     }
 }

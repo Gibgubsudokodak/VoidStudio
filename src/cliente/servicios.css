@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --background-color: #f8f9fa;
     --text-color: #333;
@@ -7,6 +8,8 @@
     --primary-color: #3498db;
 }
 
+=======
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +17,7 @@
 }
 
 body {
+<<<<<<< HEAD
     font-family: 'Segoe UI', sans-serif;
     background-color: var(--background-color);
 }
@@ -162,16 +166,43 @@ body {
 }
 
 .header-right {
+=======
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: white;
+    padding: 16px 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
+<<<<<<< HEAD
+=======
+.car-icon {
+    width: 24px;
+    height: 24px;
+    fill: #4a90e2;
+}
+
+.header-title {
+    color: #4a90e2;
+    font-size: 18px;
+    font-weight: 500;
+}
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 
 .back-button {
     display: flex;
     align-items: center;
     gap: 8px;
+<<<<<<< HEAD
     padding: 8px 12px;
     border-radius: 8px;
     background: #f5f7fa;
@@ -196,10 +227,40 @@ body {
 /* Main Content */
 .container {
     max-width: 1200px;
+=======
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: auto;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #f0f0f0;
+}
+
+.back-arrow {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.container {
+    max-width: 1000px;
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     margin: 0 auto;
     padding: 24px;
 }
 
+<<<<<<< HEAD
+=======
+.main-content {
+    width: 100%;
+}
+
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 .vehicle-header {
     background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
     color: white;
@@ -211,6 +272,7 @@ body {
 .vehicle-title {
     font-size: 48px;
     font-weight: 700;
+<<<<<<< HEAD
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -218,6 +280,16 @@ body {
     background-color: var(--card-bg);
     border-radius: 0 0 12px 12px;
     box-shadow: var(--shadow);
+=======
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     overflow: hidden;
 }
 
@@ -230,6 +302,7 @@ body {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 8px;
+<<<<<<< HEAD
     color: var(--text-color);
 }
 
@@ -248,6 +321,27 @@ body {
 
 .service-item:hover {
     background: var(--hover-bg);
+=======
+    color: #333;
+}
+
+.service-serial {
+    color: #666;
+    font-size: 14px;
+}
+
+.service-item {
+    padding: 24px 32px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: background-color 0.2s;
+}
+
+.service-item:hover {
+    background-color: #f9fafb;
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 }
 
 .service-item:last-child {
@@ -262,11 +356,20 @@ body {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 8px;
+<<<<<<< HEAD
 }
 
 .service-details {
     font-size: 14px;
     color: #666;
+=======
+    color: #333;
+}
+
+.service-details {
+    color: #666;
+    font-size: 14px;
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     margin-bottom: 12px;
 }
 
@@ -274,7 +377,11 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+<<<<<<< HEAD
     color: var(--primary-color);
+=======
+    color: #4a90e2;
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     font-size: 14px;
 }
 
@@ -282,12 +389,27 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+<<<<<<< HEAD
     font-size: 14px;
     color: #666;
     white-space: nowrap;
 }
 
 .calendar-icon, .parts-icon {
+=======
+    color: #666;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.calendar-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.parts-icon {
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     width: 16px;
     height: 16px;
     fill: currentColor;
@@ -296,6 +418,7 @@ body {
 .footer {
     text-align: center;
     padding: 24px;
+<<<<<<< HEAD
     font-size: 12px;
     color: #999;
     margin-top: 40px;
@@ -304,6 +427,32 @@ body {
 @media (max-width: 768px) {
     .back-text {
         display: none;
+=======
+    color: #999;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+.user-avatar {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 16px;
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     }
 
     .vehicle-title {
@@ -312,6 +461,7 @@ body {
 
     .service-item {
         flex-direction: column;
+<<<<<<< HEAD
         align-items: flex-start;
         gap: 12px;
     }
@@ -320,3 +470,9 @@ body {
         font-size: 1rem;
     }
 }
+=======
+        gap: 12px;
+        align-items: flex-start;
+    }
+}
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0

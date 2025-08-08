@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control de Garantías - Servicios de AutoGarantía</title>
     <link rel="stylesheet" href="styles.css">
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+=======
+
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 </head>
 <body>
     <div class="container">
         <!-- Sidebar -->
+<<<<<<< HEAD
         <div class="container">
             <!-- Sidebar -->
             <nav class="sidebar" aria-label="Menú principal">
@@ -55,6 +60,61 @@
             </div>
         </div>
     </div>
+=======
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>
+                    <span class="icon">AG</span>
+                    Servicios de AutoGarantía
+                </h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="../index.html">Panel Principal</a></li>
+                <li><a href="../Clientes/index.html">Clientes</a></li>
+                <li><a href="../Vehiculos/index.html">Vehículos</a></li>
+                <li><a href="index.html" class="active">Garantías</a></li>
+                <li><a href="../Servicios/index.html">Catálogo de Servicios</a></li>
+                <li><a href="../insumos/index.html">Catálogo de Insumos</a></li>
+                <li><a href="../Reportes/index.html">Reportes</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="header-title">
+                    <h1>Servicios de AutoGarantía</h1>
+                </div>
+                <div class="profile-container" tabindex="0">
+                    <div class="profile">A</div>
+                    <div class="profile-dropdown">
+                        <div class="dropdown-header">
+                            <div class="user-name">Admin User</div>
+                            <div class="user-role">Administrador</div>
+                        </div>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">
+                                <div class="item-icon dashboard-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                                    </svg>
+                                </div>
+                                Panel de Administrador
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <div class="item-icon logout-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.59L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/>
+                                    </svg>
+                                </div>
+                                Cerrar Sesión
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 
             <div class="content">
                 <h1>Control de Garantías</h1>
@@ -69,6 +129,7 @@
                     <table>
                         <thead>
                             <tr>
+<<<<<<< HEAD
                                 <th scope="col">Modelo Vehículo</th>
                                 <th scope="col">Número de Serie</th>
                                 <th scope="col">Propietario</th>
@@ -76,6 +137,15 @@
                                 <th scope="col">Fin de Garantía</th>
                                 <th scope="col">Estado</th>
                                 <th scope="col">Acciones</th>
+=======
+                                <th>Modelo Vehículo</th>
+                                <th>Número de Serie</th>
+                                <th>Propietario</th>
+                                <th>Fecha de Compra</th>
+                                <th>Fin de Garantía</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
                             </tr>
                         </thead>
                         <tbody>
@@ -83,6 +153,7 @@
                                 <td>Sedan X Pro</td>
                                 <td>SKX123ABC456</td>
                                 <td>John Doe</td>
+<<<<<<< HEAD
                                 <td><time datetime="2022-08-15">15/08/2022</time></td>
                                 <td><time datetime="2024-09-15">15/09/2024</time></td>
                                 <td><span class="status-badge status-expired">Expirada</span></td>
@@ -90,6 +161,15 @@
                                     <div class="action-icons">
                                         <button class="action-icon edit-icon" aria-label="Editar garantía">✏️</button>
                                         <button class="action-icon delete-icon" aria-label="Eliminar garantía">🗑️</button>
+=======
+                                <td>15/08/2022</td>
+                                <td>15/09/2024</td>
+                                <td class="status-expired">Expirada</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <label for="modal-toggle" class="action-icon edit-icon">✏️</label>
+                                        <button class="action-icon delete-icon">🗑️</button>
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
                                     </div>
                                 </td>
                             </tr>
@@ -97,6 +177,7 @@
                                 <td>SUV Y Adventure</td>
                                 <td>SKY789DEF012</td>
                                 <td>John Doe</td>
+<<<<<<< HEAD
                                 <td><time datetime="2023-01-20">20/01/2023</time></td>
                                 <td><time datetime="2026-01-20">20/01/2026</time></td>
                                 <td><span class="status-badge status-active">Activa</span></td>
@@ -105,12 +186,23 @@
                                         <label for="modal-toggle" class="action-icon edit-icon" title="Editar">✏️</label>
                                          <button class="action-icon delete-icon" title="Borrar">🗑️</button>
                                      </div>
+=======
+                                <td>20/01/2023</td>
+                                <td>20/01/2026</td>
+                                <td class="status-active">Activa</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <label for="modal-toggle" class="action-icon edit-icon">✏️</label>
+                                        <button class="action-icon delete-icon">🗑️</button>
+                                    </div>
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
                                 </td>
                             </tr>
                             <tr>
                                 <td>Hatchback Z City</td>
                                 <td>SKZ456GHI345</td>
                                 <td>Jane Smith</td>
+<<<<<<< HEAD
                                 <td><time datetime="2023-11-01">01/11/2023</time></td>
                                 <td><time datetime="2024-11-01">01/11/2024</time></td>
                                 <td><span class="status-badge status-expiring">Por expirar</span></td>
@@ -119,13 +211,30 @@
                                         <label for="modal-toggle" class="action-icon edit-icon" title="Editar">✏️</label>
                                          <button class="action-icon delete-icon" title="Borrar">🗑️</button>
                                      </div>
+=======
+                                <td>01/11/2023</td>
+                                <td>01/11/2024</td>
+                                <td class="status-expiring">Por expirar</td>
+                                <td>
+                                    <div class="action-icons">
+                                        <label for="modal-toggle" class="action-icon edit-icon">✏️</label>
+                                        <button class="action-icon delete-icon">🗑️</button>
+                                    </div>
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+<<<<<<< HEAD
         </main>
     </div>
+=======
+        </div>
+    </div>
+
+    
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 </body>
 </html>

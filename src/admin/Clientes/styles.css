@@ -15,11 +15,18 @@ body {
     min-height: 100vh;
 }
 
+<<<<<<< HEAD
 
 /* Sidebar */
 .sidebar {
     width: 250px;
     background: #1b2232;
+=======
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #1b2232 ;
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     color: white;
     padding: 0;
     position: fixed;
@@ -29,7 +36,11 @@ body {
 
 .sidebar-header {
     padding: 20px;
+<<<<<<< HEAD
     background: #1b2232;
+=======
+    background: #1b2232 ;
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     border-bottom: 1px solid #5a6681;
 }
 
@@ -44,7 +55,11 @@ body {
 .sidebar-header .icon {
     width: 20px;
     height: 20px;
+<<<<<<< HEAD
     background: #ff00f2;
+=======
+    background: #ff00c3;
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -80,6 +95,7 @@ body {
 .sidebar-menu a.active {
     background: #2d3953;
     color: white;
+<<<<<<< HEAD
     position: relative;
 }
 
@@ -91,6 +107,8 @@ body {
     bottom: 0;
     width: 4px;
     background: #3498db;
+=======
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 }
 
 /* Main Content */
@@ -115,6 +133,7 @@ body {
     gap: 12px;
 }
 
+<<<<<<< HEAD
 .header-title .car-icon {
     width: 32px;
     height: 32px;
@@ -127,6 +146,8 @@ body {
     font-size: 16px;
 }
 
+=======
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 .header-title h1 {
     font-size: 20px;
     color: #2c3e50;
@@ -261,6 +282,12 @@ body {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 /* Search and Actions */
 .search-actions {
     display: flex;

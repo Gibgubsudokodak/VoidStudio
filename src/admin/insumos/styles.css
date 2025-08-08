@@ -43,7 +43,11 @@ body {
 .sidebar-header .icon {
     width: 20px;
     height: 20px;
+<<<<<<< HEAD
     background: #ff00f2;
+=======
+    background: #f700ff;
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -77,6 +81,7 @@ body {
 }
 
 .sidebar-menu a.active {
+<<<<<<< HEAD
     background: #2d3953;
     color: white;
     position: relative;
@@ -90,6 +95,10 @@ body {
     bottom: 0;
     width: 4px;
     background: #3498db;
+=======
+    background: #2d3953 ;
+    color: white;
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 }
 
 /* Main Content */
@@ -114,6 +123,7 @@ body {
     gap: 12px;
 }
 
+<<<<<<< HEAD
 .header-title .car-icon {
     width: 32px;
     height: 32px;
@@ -126,6 +136,8 @@ body {
     font-size: 16px;
 }
 
+=======
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 .header-title h1 {
     font-size: 20px;
     color: #2c3e50;
@@ -134,6 +146,10 @@ body {
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 16b8c7f47a669f36d63124fc963c566a744260f0
 .profile-container {
     margin-left: auto;
     position: relative;
